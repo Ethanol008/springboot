@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<script type="text/javascript" src="webjars/jquery/3.5.1/jquery.min.js"></script>
+<body style="background: #f5f5f5;">
+<h1 style="text-align: center; color: #333; margin-top: 30px;">用户注册</h1>
+<div class="register">
+    <div class="registertop">用户注册</div>
+    <form action="/userRegister" style="margin: 10px;">
+        <div class="ref">
+            <label for="userName">请输入用户名</label>
+            <input type="text" name="userName" id="userName" />
+        </div>
+        <div class="ref">
+            <label for="password">请设置密码</label>
+            <input type="password" name="password" id="password" />
+        </div>
+        <div class="ref">
+            <label for="repassword">再次输入密码</label>
+            <input type="password" name="repassword" id="repassword" />
+        </div>
+        <div class="ref">
+            <input type="submit" value="注册用户" style="background: #6ab2e4; color: white; border: none; cursor: pointer; padding: 8px 20px; border-radius: 5px;">
+        </div>
+    </form>
+</div>
+</body>
+<style>
+    .register {
+        background: #fff;
+        width: 450px;
+        height: auto;
+        margin: 100px auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .registertop {
+        background: #6ab2e4;
+        color: #fff;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 10px 10px 0 0;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .ref {
+        background: #9bd48f;
+        color: #fff;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 10px;
+    }
+</style>
+</html>
